@@ -1,4 +1,3 @@
-setwd("C:/Users/kexin_000/Downloads/exdata-data-household_power_consumption")
 
 Dt <- read.table("household_power_consumption.txt", sep = ";", header = T, na.strings = "?", nrow = 2075259, stringsAsFactors = F )
 
@@ -11,5 +10,5 @@ colnames(Dt1)
 
 hist(Dt1$Global_active_power, main = "Global Active Power", xlab = "Global Active Power (kilowatts)", ylab = "Frequency", col = "red")
 
-dev.copy(png, file="C:\\Users\\kexin_000\\Exploratory-Data-Analysis\\plot1.png", height=480, width=480)
+dev.copy(png, file="plot1.png", height=480, width=480)
 dev.off()
